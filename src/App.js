@@ -13,7 +13,7 @@ function App() {
   const [result, setResult] = useState(0);
 
   const addButton = () => {
-    axios.get('http://localhost:3001?num1=' + num1 + '&num2=' + num2).then((result) => {
+    axios.get('http://184.173.1.252:30805/?num1=' + num1 + '&num2=' + num2).then((result) => {
       console.log(result.data.result);
       setResult(result.data.result);
     }).catch((error) => {
