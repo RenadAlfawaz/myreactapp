@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Form, Row, Col, Container, Button, Alert } from 'react-bootstrap';
+import { Form, Row, Col, Container, Button } from 'react-bootstrap';
 import axios from 'axios';
 
 
