@@ -13,17 +13,8 @@ function App() {
 
   const addButton = () => {
     axios.get('http://184.173.1.252:30805/?num1=' + num1 + '&num2=' + num2).then((result) => {
-      console.log(result.data.result);
-      setResult(result.data.result);
-    }).catch((error) => {
-      console.log(error);
-    });
-  }
-
-  const divButton = () => {
-    axios.get('http://localhost:3002?num1=' + num1 + '&num2=' + num2).then((result) => {
-      console.log(result.data.result);
-      setResult(result.data.result);
+      console.log(result.data);
+      setResult(result.data);
     }).catch((error) => {
       console.log(error);
     });
