@@ -58,11 +58,6 @@ function App() {
               Addition
             </Button>
           </Row>
-          <Row style={{ display: 'flex' }}>
-            <Button onClick={divButton} style={{ flex: 1, marginTop: 20 }}>
-              Addition
-            </Button>
-          </Row>
         </Form>
       </Container>
     </div>
