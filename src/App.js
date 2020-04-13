@@ -12,7 +12,7 @@ function App() {
   const [result, setResult] = useState(0);
 
   const addButton = () => {
-    axios.get('http://184.172.252.27:31777/?num1=' + num1 + '&num2=' + num2).then((result) => {
+    axios.get('http://184.172.252.27:31538/?num1=' + num1 + '&num2=' + num2).then((result) => {
       console.log(result.data);
       setResult(result.data);
     }).catch((error) => {
