@@ -12,7 +12,7 @@ function App() {
   const [result, setResult] = useState(0);
 
   const addButton = () => {
-    axios.get('http://184.172.252.27:31538/?num1=' + num1 + '&num2=' + num2).then((result) => {
+    axios.get('http://backend-addition.mycluster-lon02-b-545605-8b8b55f5f57d1f3f0a499b0d7202ef19-0000.eu-gb.containers.appdomain.cloud/?num1=' + num1 + '&num2=' + num2).then((result) => {
       console.log(result.data);
       setResult(result.data);
     }).catch((error) => {
